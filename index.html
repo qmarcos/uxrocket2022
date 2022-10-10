@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rocket - Módulo 2. Usabilidad Web</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css?r=20200912T1520">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a class="reference" href="#">Recursos UX<span class="sr-only">(current)</span></a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://about.me/qmarcos" target="_blank">Sobre el formador</a></li>
+                    <li><a href="#about-training">Sobre el curso</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1>Experiencia de Usuario <small>Guía de referencia</small></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-5 col-md-4"><!-- sidebar -->
+                <div class="content-index">
+                    <dl>
+                        <dt>Fundamentos UX/UI</dt>
+                        <dd><a class="index-link" href="#reference">Referencias básicas</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Herramientas</dt>
+                        <dd><a class="index-link" href="#tools">Herramientas y Software</a></dd>
+                        <dd><a class="index-link" href="#bundles">Recopilatorios</a></dd>
+                        <dd><a class="index-link" href="#multipurpose">Generales</a></dd>
+                        <dd><a class="index-link" href="#dresearch">Desktop Research</a></dd>
+                        <dd><a class="index-link" href="#cardsorting">Card Sorting y Tree Testing</a></dd>
+                        <dd><a class="index-link" href="#contenttree">Árbol de Conteidos, Diagramas de flujo, Mapas mentales...</a></dd>
+                        <dd><a class="index-link" href="#prototype">Prototipado</a></dd>
+                        <dd><a class="index-link" href="#testing">Testing</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Otras fuentes</dt>
+                        <dd><a class="index-link" href="#pages">Páginas y Blogs</a></dd>
+                        <dd><a class="index-link" href="#courses">Cursos online (gratuitos)</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Recursos</dt>
+                        <dd><a class="index-link" href="#best-practices">Buenas prácticas</a></dd>
+                        <dd><a class="index-link" href="#patterns">Patrones de diseño</a></dd>
+                        <dd><a class="index-link" href="#design-systems">Sistemas de diseño</a></dd>
+                        <dd><a class="index-link" href="#icons">Iconos</a></dd>
+                        <dd><a class="index-link" href="#various">Varios</a></dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-7 col-md-8"><!-- main content: Conceptos Generales -->
+                <div class="main">
+                    <h2>Diseño de Experiencia de Usuario</h2>
+
+                    <blockquote>
+                        <h3>UI (Interfaz de Usuario)</h3>
+                        <p>Mecanismo por el que un usuario interactúa con un servicio / producto. La primera GUI (interfaz de usuario gráfica) fue creada en 1980 por Xerox.</strong></p>
+                    </blockquote>
+
+                    <blockquote>
+                        <h3>UX (Experiencia de Usuario)</h3>
+                        <p>El cómo se siente el usuario cuando realiza esas interacciones, conectándolo con las necesidades del negocio. Término surgido en Apple, en 1990.</p>
+                    </blockquote>
+
+                    <h3 id="reference">Materiales de referencia</h3>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://dhd.gitbook.io/dhd-glosario-ux/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Glosario UX [es]</a></li>
+                        <li><a href="https://www.usability.gov/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Usability.gov [en] ⭐️</a></li>
+                        <li><a href="http://design-toolkit.uoc.edu/es/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UOC Design Toolkit [es] ⭐️</a></li>
+                        <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> 10 Usability Heuristics for UI [en] ⭐️</a></li>
+                        <li><a href="https://lawsofux.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Laws of UX [en] ⭐️</a></li>
+                        <li><a href="https://www.uxlibrary.org/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UX Library [en]</a></li>
+                        <li><a href="https://methods.18f.gov/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> 18F Methods [en]</a></li>
+                        <li><a href="https://uxtools.co/challenges/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UX Challenges [en]</a></li>
+                        <li><a href="https://www.lukew.com/ff/entry.asp?156" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> User Experience Diagrams [en]</a></li>
+                        <li><a href="https://ux.stackexchange.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UX StackExchange [en] ⭐️</a></li>
+                    </ul>
+
+
+                    <h3 id="tools">Herramientas y software</h3>
+
+                    <p>Muchos de los métodos de UX han generado a su alrededor herramientas y aplicaciones que están enfocadas a facilitar y potenciar dichos métodos:</p>
+
+                    <h4 id="bundles">Recopilatorios de herramientas</h4>
+
+                    <p>Algunos de estos links ya <strong>agrupan las herramientas por etapas</strong> de un proyecto UX <strong>o por métodos</strong> para los que han sido creadas.</p>
+
+                    <div class="list-unstyled link-doc">
+                        <a>El enlace "Design Tools Database" es un gran recurso tanto para acceder a los enlaces de las herramientas agrupadas por tipologías como para ver su comparativa.</a>
+                    </div>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://www.uxdatabase.io/product-database" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UX Database ⭐️</a></li>
+                        <li><a href="https://uxtools.co/tools/design" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Design Tools Database (comparativa) ⭐️</a></li>
+                        <li><a href="https://www.airtable.com/universe/exp7BidtSB73ihAqw/user-research-tool-box?explore=true" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> User research Tool Box</a></li>
+                        <li><a href="http://www.uxforthemasses.com/resources/free-ux-tools/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Free UX Tools</a></li>
+                    </ul>
+
+                    <h4 id="multipurpose">Generales</h4>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://www.figma.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Figma ⭐️</a></li>
+                        <li><a href="https://www.sketch.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Sketch</a></li>
+                        <li><a href="https://www.adobe.com/products/experience-design.html" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Adobe XD</a></li>
+                    </ul>
+
+                    <h4 id="dresearch">Desktop Research</h4>
+
+                    <ul class="list-unstyled list-link">
+                        <li><a href="https://researchbookmark.io/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Researach Bookmarks</a></li>
+                    </ul>
+
+
+                    <h4 id="cardsorting">Card Sorting, Tree testing</h4>
+
+                    <ul class="list-unstyled list-link">
+                        <li><a href="https://www.optimalworkshop.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Optimal Workshop</a></li>
+                    </ul>
+
+                    <h4 id="contenttree">Árboles Contenido, Diagramas de flujo y mapas mentales</h4>
+
+                    <ul class="list-unstyled list-link">
+                        <li><a href="https://whimsical.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Whimsical.</a></li>
+                        <li><a href="https://www.xmind.net/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> xMind</a></li>
+                        <li><a href="https://miro.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Miró</a></li>
+                        <li><a href="https://www.figma.com/community/plugin/733902567457592893" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Plugin Autoflow Figma.</a></li>
+                    </ul>
+
+
+                    <h4 id="prototype">Prototipado</h4>
+
+                    <ul class="list-unstyled list-link">
+                        <li><a href="https://www.figma.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Figma ⭐️</a></li>
+                        <li><a href="https://www.sketch.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Sketch</a></li>
+                        <li><a href="https://www.adobe.com/products/experience-design.html" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Adobe XD</a></li>
+                        <li><a href="https://www.invisionapp.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Invision</a></li>
+                        <li><a href="https://marvelapp.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Marvel</a></li>
+                        <li><a href="https://www.framer.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Framer</a></li>
+                        <li><a href="https://www.axure.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Axure</a></li>
+                        <li><a href="https://webflow.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Webflow</a></li>
+                    </ul>
+
+                    <h4 id="testing">Testing</h4>
+
+                    <ul class="list-unstyled list-link">
+                        <li><a href="https://www.hotjar.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Hotjar (eyetracking)</a></li>
+                        <li><a href="https://www.userzoom.com/es/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> User Zoom</a></li>
+                        <li><a href="https://maze.co/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Maze</a></li>
+                        <li><a href="https://www.userfeel.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> User Feel</a></li>
+                        <li><a href="https://www.loop11.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Loop11</a></li>
+                    </ul>
+
+                    <h2>Otras fuentes</h2>
+
+                    <p>A continuación se muestra un listado con páginas, blogs y libros de referencia en UX.</p>
+
+                    <h3 id="pages">Páginas, Blogs y Libros</h3>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://www.nngroup.com/articles/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Nielsen Norman Group [en] ⭐️</a></li>
+                        <li><a href="https://www.usability.gov/sites/default/files/documents/guidelines_book.pdf" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Usability Gov Guidelines [PDF book] [en] ⭐️</a></li>
+                        <li><a href="https://developer.apple.com/design/human-interface-guidelines/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Apple Human Interface Guidelines [en]</a></li>
+                        <li><a href="https://medium.com/google-design" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Google Design [en]</a></li>
+                        <li><a href="https://www.uifrommars.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UI from mars [es]</a></li>
+                        <li><a href="https://medium.com/designbetter" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Design Better [en]</a></li>
+                        <li><a href="https://uxmyths.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UX Myths [en]</a></li>
+                        <li><a href="https://uxplanet.org/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UX Planet [en]</a></li>
+                        <li><a href="https://www.uxmatters.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UX Matters [en]</a></li>
+                        <li><a href="https://uxdesign.cc/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UX Collective [en]</a></li>
+                        <li><a href="https://uxmag.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UX Magazine [en]</a></li>
+                        <li><a href="https://uxmovement.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UX Movement [en]</a></li>
+                        <li><a href="https://www.kickassux.com/ux-library" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UX Library [en]</a></li>
+                        <li><a href="https://theuxblog.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> The UX Blog [en]</a></li>
+                        <li><a href="https://www.smashingmagazine.com/usability-and-user-experience/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Smashing Magazine UX [en]</a></li>
+                        <li><a href="https://usabilitygeek.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UsabilityGeek [en]</a></li>
+                        <li><a href="https://www.interaction-design.org/literature" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Interaction Design Literature [en]</a></li>
+                        <li><a href="https://www.lukew.com/ff/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Form and Function [en]</a></li>
+                        <li><a href="https://uxchecklist.github.io/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> UX Project Checklist [en]</a></li>
+                        <li><a href="https://52weeksofux.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> 52 weeks of UX [en]</a></li>
+                        <li><a href="https://www.retoux.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> RetoUX [es]</a></li>
+                        <li><a href="http://www.uxables.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Uxables [es]</a></li>
+                    </ul>
+
+
+                    <h2 id="courses">Cursos online (gratuitos)</h2>
+
+                    <p>A continuación se muestra un listado con cursos gratuitos sobre UX.</p>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://www.udemy.com/courses/search/?price=price-free&q=ux&sort=relevance&src=ukw" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Cursos en Udemy [en]</a></li>
+                        <li><a href="https://www.futurelearn.com/courses/digital-skills-user-experience" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Digital Skills: User Experience [en]</a></li>
+                        <li><a href="https://www.udacity.com/course/product-design--ud509" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Product Design by Google [en]</a></li>
+                        <li><a href="https://www.coursera.org/learn/user-experience-design" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Introduction to User Experience Design [en]</a></li>
+                        <li><a href="https://www.coursera.org/specializations/ui-ux-design" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> UI / UX Design Specialization [en]</a></li>
+                        <li><a href="https://www.linkedin.com/learning/paths/become-a-user-experience-designer" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Become an User Experience Designer [en]</a></li>
+                        <li><a href="https://thehipperelement.com/post/75476711614/ux-crash-course-31-fundamentals" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> UX Crash Course [en]</a></li>
+                        <li><a href="https://hackdesign.org/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Hack Design [en]</a></li>
+                    </ul>
+
+                    <h2>Recursos</h2>
+
+                    <h3 id="best-practices">Buenas prácticas</h3>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://uxdesign.cc/text-fields-forms-design-ui-components-series-2b32b2beebd0" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Buenas Prácticas Fomrularios I [en]</a></li>
+                        <li><a href="https://pttrns.com/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Pttrns [en]</a></li>
+                        <li><a href="http://ui-patterns.com/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> UI Patterns [en]</a></li>
+                        <li><a href="https://uigarage.net/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> UI Garage [en]</a></li>
+                        <li><a href="https://www.smashingmagazine.com/2022/08/error-messages-ux-design/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> UX para mensajes de error [en]</a></li>
+                        <li><a href="https://uxdesign.cc/7-principles-of-icon-design-e7187539e4a2" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Principios para el diseño de iconos [en]</a></li>
+                        <li><a href="https://material.io/design/iconography/system-icons.html#design-principles" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Material Icon System [en]</a></li>
+                        <li><a href="https://uxplanet.org/design-system-icons-5955b68eb3dd" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Design System Icons [en]</a></li>
+                        <li><a href="https://www.lukew.com/ff/entry.asp?1945" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Obvious always wins [en]</a></li>
+                    </ul>
+
+                    <h3 id="patterns">Patrones de diseño</h3>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://uxarchive.com/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> UX Archive [en]</a></li>
+                        <li><a href="https://pttrns.com/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Pttrns [en]</a></li>
+                        <li><a href="http://ui-patterns.com/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> UI Patterns [en]</a></li>
+                        <li><a href="https://uigarage.net/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> UI Garage [en]</a></li>
+                        <li><a href="https://bradfrost.github.io/this-is-responsive/patterns.html" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Responsive Patterns I [en]</a></li>
+                        <li><a href="https://rwd.is/patterns/index.html" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Responsive Patterns II [en]</a></li>
+                        <li><a href="https://web.dev/learn/design/ui-patterns/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> User interface patterns [en]</a></li>
+                        <li><a href="http://www.welie.com/patterns/index.php" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Pattern Library [en]</a></li>
+                        <li><a href="https://csslayout.io/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Popular component patterns in CSS [en]</a></li>
+                    </ul>
+
+                    <h3 id="design-systems">Sistemas de diseño</h3>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://github.com/alexpate/awesome-design-systems ">Awesome Design Systems</a></li>
+                    </ul>
+
+                    <h3 id="icons">Icons</h3>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://ionic.io/ionicons" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Ionicons</a></li>
+                        <li><a href="https://www.flaticon.com/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Flat Icon</a></li>
+                        <li><a href="https://heroicons.com/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Hero icons</a></li>
+                        <li><a href="https://lineicons.com/icons/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Line Icons</a></li>
+                        <li><a href="https://iconic.app/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Iconic</a></li>
+                        <li><a href="https://tabler-icons.io/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Tabler Icons</a></li>
+                        <li><a href="https://iconoir.com/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Iconoir</a></li>
+                        <li><a href="https://iconsvg.xyz/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Icon SVG</a></li>
+                        <li><a href="https://iconscout.com/unicons/explore/line" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Unicons</a></li>
+                        <li><a href="https://fonts.google.com/icons?selected=Material+Icons:commute" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Material Icons</a></li>
+                        <li><a href="https://thenounproject.com/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> The Noun Project</a></li>
+                        <li><a href="https://www.iconfinder.com/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Icon Finder</a></li>
+                        <li><a href="https://icomoon.io/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Icon Moon</a></li>
+                    </ul>
+
+
+                    <h3 id="various">Varios</h3>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://help.figma.com/hc/en-us/categories/360002042553-Figma-design#Get-started" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Figma Docs [en]</a></li>
+                        <li><a href="https://help.figma.com/hc/en-us/categories/6448726686615-Tutorials#Figma-for-Beginners-(4-parts)" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Figma tutorials for Beginners [en]</a></li>
+                        <li><a href="https://www.uxtoast.com/ui-design/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> Figma Tutorials [en]</a></li>
+                        <li><a href="http://www.uxforthemasses.com/resources/example-ux-docs/" target="_blank"><span class="glyphicon glyphicon-link" aria="hidden"></span> UX Methods Deriverables Samples [en]</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row equal-height about-training" id="about-training">
+            <div class="col-xs-12">
+                <h2>Acerca de este curso</h2>
+            </div>
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>ROCKET es el Curso de Programación del Futuro de la Web, organizado por el <a href="https://web.ua.es/es/dccia/" target="_blank">Departamento de Ciencia de la Computación e Inteligencia Artificial (DCCIA) de la UA</a>, que incorpora como parte de la dirección y profesorado, a profesionales del ámbito empresarial, como el equipo de <a href="https://nitsnets.com">NITSNETS</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-sm-offset-3">
+                <div class="logo-sponsor">
+                    <img src="img/logo_rocket.png" alt="Rocket">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="logo-sponsor">
+                    <img src="img/logo_ua.png" alt="Universidad de Alicante">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script>
+    $('.content-index').affix({
+        offset: {
+            top: 170,
+            bottom: function () {
+                return (this.bottom = $('#about-training').outerHeight(true))
+            }
+        }
+    })
+</script>
+</body>
+</html>
